@@ -4,7 +4,11 @@
   "version": "1.0.0",
   "description": "automatically appends the udm=14 parameter to Google search URLs to reduce AI-generated and bloated search results.",
   "permissions": ["tabs", "webNavigation"],
-  "host_permissions": ["*://*.google.*/*"],
+  "host_permissions": [
+    "*://*.google.com/*",
+    "*://*.google.es/*",
+    "*://*.google.cat/*"
+  ],
   "background": {
     "service_worker": "service_worker.js"
   }
