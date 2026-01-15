@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "hide-google-ai-results",
+  "version": "1.0.0",
+  "description": "automatically appends the udm=14 parameter to Google search URLs to reduce AI-generated and bloated search results.",
+  "permissions": ["tabs", "webNavigation"],
+  "host_permissions": ["*://*.google.*/*"],
+  "background": {
+    "service_worker": "service_worker.js"
+  }
+}
